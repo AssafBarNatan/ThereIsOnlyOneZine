@@ -1,14 +1,52 @@
 %\documentclass[letterpaper]{article}
-\documentclass{article}
+\documentclass[8pt]{extarticle}
 \usepackage{geometry}
 \geometry{papersize={2.125in,2.75in}}
 
 \usepackage[dvipsnames]{xcolor}
 \usepackage{csquotes,tikz,microtype}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{thm}[lem]{Theorem}
+\newtheorem{fact}[lem]{Fact}
+\newtheorem{prop}[lem]{Proposition}
+\newtheorem{cor}[lem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}[lem]{Definition}
+\newtheorem{rem}[lem]{Remark}
+\newtheorem{example}[lem]{Example}
+\newtheorem{exercise-thm}{Exercise}[section]
+\newtheorem{question}{Question}
+
+\newcommand \eps{\varepsilon}
+\newcommand \ssm{\smallsetminus}
+\setlength\parindent{0pt}
 
 \begin{document}
 
+\setcounter{page}{1}
 \input{page1.tex}
+\newpage
+\setcounter{page}{1}
 \input{page2.tex}
-
+\newpage
+\setcounter{page}{1}
+\input{page3.tex}
+\newpage
+\setcounter{page}{1}
+\input{page4.tex}
+\newpage
+\setcounter{page}{1}
+\input{page5.tex}
+\newpage
+\setcounter{page}{1}
+\input{page6.tex}
+\newpage
+\setcounter{page}{1}
+\input{page7.tex}
 \end{document}
